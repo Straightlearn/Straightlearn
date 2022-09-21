@@ -8,4 +8,3 @@ def uppercase(str):
         else:
             uppercase += i
     print("{:s}".format(uppercase))
-        
