@@ -6,6 +6,6 @@ def best_score(a_dictionary):
             if best_key:
                 if a_dictionary[best_key] < a_dictionary[key]:
                     best_key = key
-                continue;
+                continue
             best_key = key
     return best_key
