@@ -9,7 +9,7 @@ def roman_to_int(roman_string):
         return integer
 
     for numeral in roman_string:
-        if not roman_int[numeral]:
+        if numeral not in roman_int:
             return 0
         if (prev_numeral and roman_int[prev_numeral] < roman_int[numeral]):
             integer += roman_int[numeral] - roman_int[prev_numeral] * 2
