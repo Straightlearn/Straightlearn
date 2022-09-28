@@ -5,12 +5,12 @@ def roman_to_int(roman_string):
                  'D': 500, 'M': 1000}
     prev_numeral = ''
 
-    if not roman_string:
+    if not roman_string or type(roman_string) is not str:
         return integer
 
     for numeral in roman_string:
         if numeral not in roman_int:
-            continue
+            return integer
         if (prev_numeral and roman_int[prev_numeral] < roman_int[numeral]):
             integer += roman_int[numeral] - roman_int[prev_numeral] * 2
         else:
