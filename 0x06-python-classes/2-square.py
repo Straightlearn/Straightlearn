@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """Creates an initialized Class"""
+
+
 class Square:
     """Square class with __init__"""
     def __init__(self, size=0):
