@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Creates an initialized class"""
 class Square:
     """Square class with initialization
     Attributes:
