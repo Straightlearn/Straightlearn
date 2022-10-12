@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Creates an initialized Class"""
 
+
 class Square:
     """Square class that is initialized and gets the area of a square"""
     def __init__(self, size=0, position=(0, 0)):
@@ -15,7 +16,8 @@ class Square:
                 self.__size = size
         else:
             raise TypeError("size must be an integer")
-        if not (type(position) is tuple and len(position) is 2 and position[0] >= 0 and position[1] >= 0):
+        if not (type(position) == tuple and len(position) == 2 and
+                position[0] >= 0 and position[1] >= 0):
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
             self.__position = position
@@ -23,8 +25,8 @@ class Square:
     @property
     def size(self):
         """manipulates the value of the size attribute"""
-        return self.__size 
-    
+        return self.__size
+
     @size.setter
     def size(self, value):
         if type(value) == int:
@@ -34,15 +36,16 @@ class Square:
                 self.__size = value
         else:
             raise TypeError("size must be an integer")
-    
+
     @property
     def position(self):
         """manipulates the value of the position attribute"""
         return self.___position
-    
+
     @position.setter
     def position(self, value):
-        if not (type(value) is tuple and len(value) is 2 and value[0] >= 0 and value[1] >= 0):
+        if not (type(value) == tuple and len(value) == 2 and
+                value[0] >= 0 and value[1] >= 0):
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
             self.__position = value
@@ -56,9 +59,8 @@ class Square:
         if self.__size == 0:
             print()
             return
+        for i in range(self.__position[1]):
+            print("")
         for i in range(self.__size):
-            for j in range(self.__position[0]):
-                print(" ", end="")
-            for j in range(self.__size):
-                print("#", end="")
-            print()
+            print(" " * self.__position[0], end="")
+            print("#" * self.__size)

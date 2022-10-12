@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Creates an initialized Class"""
 
+
 class Square:
     """Square class that is initialized and gets the area of a square"""
     def __init__(self, size=0):
@@ -19,8 +20,8 @@ class Square:
     @property
     def size(self):
         """manipulates the value of the size attribute"""
-        return self.__size 
-    
+        return self.__size
+
     @size.setter
     def size(self, value):
         if type(value) == int:
@@ -41,6 +42,4 @@ class Square:
             print()
             return
         for i in range(self.__size):
-            for j in range(self.__size):
-                print("#", end="")
-            print()
+            print("#" * self.__size)
