@@ -3,14 +3,14 @@
 
 
 class Rectangle:
-    """A Rectangle class with different private attributes and public class attibutes
-
-    Args:
-        @number_of_intances: class attribute 
+    """A Rectangle class with different private attributes and
+        public class attibutes
+    Public Attributes:
+        @number_of_intances: class attribute
                         increment on instantiation and decrement on deletion
     """
     number_of_instances = 0
-    
+
     def __init__(self, width=0, height=0):
         """initialized the class with some private attribute"""
         if type(width) != int:
@@ -42,10 +42,11 @@ class Rectangle:
         return string
 
     def __repr__(self):
-        """returns a formal string representation of Class 
+        """returns a formal string representation of Class
         that can be reinstantiated
         """
-        return "Rectangle(" + str(self.__width) + ", " + str(self.__height) + ")"
+        return "Rectangle(" + str(self.__width) + ", " + \
+            str(self.__height) + ")"
 
     @property
     def width(self):
