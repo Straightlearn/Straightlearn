@@ -9,3 +9,35 @@ Write the name of the function in the file, without ().
 How do you get the variable identifier (which is the memory address in the CPython implementation)?
 
 Write the name of the function in the file, without ().
+
+## 2. Right count
+In the following code, do a and b point to the same object? Answer with Yes or No.
+```python
+>>> a = 89
+>>> b = 100
+```
+## 3. Right count=
+In the following code, do a and b point to the same object? Answer with Yes or No.
+```python
+>>> a = 89
+>>> b = 89
+```
+## 4. Right count=
+In the following code, do a and b point to the same object? Answer with Yes or No.
+```python
+>>> a = 89
+>>> b = a
+```
+## 5. Right count=+
+In the following code, do a and b point to the same object? Answer with Yes or No.
+```python
+>>> a = 89
+>>> b = a + 1
+```
+## 6. Is equal
+What do these 3 lines print?
+```python
+>>> s1 = "Best School"
+>>> s2 = s1
+>>> print(s1 == s2)
+```
