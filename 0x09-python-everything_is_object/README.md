@@ -41,3 +41,52 @@ What do these 3 lines print?
 >>> s2 = s1
 >>> print(s1 == s2)
 ```
+## 7. Is the same
+What do these 3 lines print?
+```python
+>>> s1 = "Best"
+>>> s2 = s1
+>>> print(s1 is s2)
+```
+## 8. Is really equal
+What do these 3 lines print?
+```python
+>>> s1 = "Best School"
+>>> s2 = "Best School"
+>>> print(s1 == s2)
+```
+## 9. Is really the same
+What do these 3 lines print?
+```python
+>>> s1 = "Best School"
+>>> s2 = "Best School"
+>>> print(s1 is s2)
+```
+## 10. And with a list, is it equal
+What do these 3 lines print?
+```python
+>>> l1 = [1, 2, 3]
+>>> l2 = [1, 2, 3] 
+>>> print(l1 == l2)
+```
+## 11. And with a list, is it the same
+What do these 3 lines print?
+```python
+>>> l1 = [1, 2, 3]
+>>> l2 = [1, 2, 3] 
+>>> print(l1 is l2)
+```
+## 12. And with a list, is it really equal
+What do these 3 lines print?
+```python
+>>> l1 = [1, 2, 3]
+>>> l2 = l1
+>>> print(l1 == l2)
+```
+## 13. And with a list, is it really the same
+What do these 3 lines print?
+```python
+>>> l1 = [1, 2, 3]
+>>> l2 = l1
+>>> print(l1 is l2)
+```
