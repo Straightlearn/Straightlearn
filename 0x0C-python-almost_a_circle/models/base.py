@@ -3,6 +3,8 @@
 
 
 import unittest
+
+
 class Base:
     """A Class for our test"""
     _nb_objects = 0
@@ -15,6 +17,7 @@ class Base:
         else:
             __nb_objects = __nb_objects + 1
             self.id = __nb_objects
+
 
 if __name__ == "__main__":
     unittest.main()
