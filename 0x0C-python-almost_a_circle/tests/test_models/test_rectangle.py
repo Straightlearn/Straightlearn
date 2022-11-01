@@ -44,7 +44,7 @@ class Rectangle(Base):
         """y getter"""
         return self.__y
 
-    def set_y(self):
+    def set_y(self, y):
         """y setter"""
         self.__y = y
 
