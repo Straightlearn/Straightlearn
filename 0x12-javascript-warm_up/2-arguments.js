@@ -1,5 +1,5 @@
 #!/usr/bin/node
-//Prints a message depending on the number of arguments
+/*Prints a message depending on the number of arguments*/
 
 let message = 'Arguments found';
 if (process.argv.length === 2) message = 'No argument';
