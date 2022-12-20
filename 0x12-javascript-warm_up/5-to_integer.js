@@ -1,5 +1,5 @@
 #!/usr/bin/node
-// Prints My number: <first argument converted in integer>
+// pints My number: <first argument converted in integer>
 
 let number = process.argv[2];
 if (isNaN(number)) {

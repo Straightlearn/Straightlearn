@@ -1,5 +1,5 @@
 #!/usr/bin/node
-// printing based on argument
+// prints based on argument
 
 if (isNaN(process.argv[2])) {
 	console.log('Missing number of occurrences');

@@ -1,5 +1,5 @@
 #!/usr/bin/node
-// Multi languages
+// prints multi languages
 
 let strs = ['C is fun', 'Python is cool',
 	'JavaScript is amazing'];
