@@ -1,7 +1,4 @@
 #!/usr/bin/node
-let C = "C is fun";
-let Py = "Python is cool";
-let Js = "JavaScript is amazing";
-console.log(C);
-console.log(Py);
-console.log(Js);
+// prints multi-lines
+
+console.log('C is fun\nPython is cool\nJavascript is amazing');
